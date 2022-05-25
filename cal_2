@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(void)
+{
+    char opr;
+    double firstNum, secNum;
+
+    printf("Enter operator:");
+    scanf("%c", &opr);
+
+    printf(" Enter  two perands:");
+    scanf(" %lf , %lf", &firstNum, &secNum);
+
+    switch (opr)
+    {
+    case '+':
+        printf("%.1lf + %.1lf = %.1lf", firstNum, secNum, (firstNum + secNum));
+        break;
+
+    case '-':
+        printf("%.1lf - %.1lf = %.1lf", firstNum, secNum, (firstNum - secNum));
+        break;
+    case '*':
+        printf("%.1lf * %.1lf = %.1lf", firstNum, secNum, (firstNum * secNum));
+        break;
+
+    case '/':
+        printf("%.1lf / %.1lf = %.1lf", firstNum, secNum, (firstNum / secNum));
+        break;
+
+    default:
+    printf("An unknown error occured :(");
+        break;
+    }
+}
